@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Rudy";
+    src: url(/Fonts/Ruda-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(/Fonts/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Kaushan";
+    src: url(/Fonts/KaushanScript-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Philosopher";
+    src: url(/Fonts/Philosopher-Regular.ttf) format('truetype');
+}
+body{
+    background: #050505;
+}
+::selection{
+    background-color: #f3f3f3;
+    color: #050505;
+}
+nav{
+    border-top: #f3f3f3 1px solid;
+}
+.navbar { 
+    background: #050505;
+} 
+.nav-link{
+    font-family: "Philosopher";
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    color: #f3f3f3 !important
+}
+.nav-link:after, .nav-link:before{
+        display: block;
+        content: '';
+        border-bottom: solid 2px #f3f3f3;  
+        transform: scaleX(0);  
+        transition: transform 0.45s ease-in-out;
+}
+.nav-link:hover:after{ 
+    transform: scaleX(1); 
+}
+.navbar-brand{
+    color: #f3f3f3 !important;
+    text-decoration: underline;
+    padding: none;
+    font-family: "Philosopher";
+}
+.navbar-brand:hover{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+.hero-img{
+    min-height: 60vh;
+    background-image: url(images/passimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero-img .overlay{
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    min-height: 60vh;
+
+}
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transform: translateY(-60px);
+}
+.cricle img{
+    border-radius: 50%;
+    /* max-width: 150px; */
+}
+.hero-img h1{
+    font-family: "Philosopher";
+    font-size: 4em;
+}
+.custom-checkbox {
+    display: none;
+  }
+
+.custom-checkbox + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox:checked + label::before {
+    background-color: #000;
+    border-color: #000;
+}
+
+.custom-checkbox:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+#passLength {
+    width: 100%;
+    margin: 5px 0;
+}
+#passLengthValue {
+    font-weight: bold;
+}
+#password{
+    border-radius: 0px;
+    max-width: 300px;
+}
+#generateBtn{
+    font-size: 0.7em;
+    border-radius: 0px;
+    max-width: 100px;
+    max-height: 30px;
+}
+.card{
+    background-color: #000;
+    color: #f3f3f3;
+    border: #f3f3f3 1px solid;
+    border-radius: 0%;
+    padding: 20px;
+    margin: 50px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    min-height: 20vh;
+    background: #3d3d3d;
+    padding: 20px;
+}
+footer .container{
+    height: 100%;
+}
